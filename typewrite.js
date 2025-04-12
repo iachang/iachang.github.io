@@ -7,6 +7,15 @@ class Typewrite {
         this.type();
     }
 
+    async blink() {
+        while (true) {
+            this.element.innerHTML = `<span class="wrap">${this.finalText}</span>`;
+            await sleep(600);
+            this.element.innerHTML = this.finalText;
+            await sleep(600);
+        }
+    }
+    
     async type() {
         let currentText = '';
         for (const char of this.finalText) {
@@ -14,7 +23,7 @@ class Typewrite {
             this.element.innerHTML = `<span class="wrap">${currentText}</span>`;
             await sleep(250);
         }
-        this.element.innerHTML = this.finalText;
+        await this.blink();
     }
 }
 
