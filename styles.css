@@ -81,8 +81,8 @@ body {
 
 .img-silhouette-shift {
   position: relative;
-  top: 0.3rem;
-  left: 0.3rem;
+  top: 0.5rem;
+  left: 0.5rem;
   width: 100%;
   height: auto;
   display: block;
