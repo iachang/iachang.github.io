@@ -137,6 +137,10 @@ body {
 }
 
 .pub-description {
+  margin-bottom: 0.5rem;
+}
+
+.pub-description-final {
   margin-bottom: 1rem;
 }
 
